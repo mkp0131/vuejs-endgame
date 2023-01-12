@@ -5,6 +5,10 @@
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
+      // 별칭
+      "~/*": [
+        "./*"
+      ],
       "@/*": [
         "src/*"
       ]
@@ -14,6 +18,10 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
-  }
+    ],
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
